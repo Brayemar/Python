@@ -16,3 +16,37 @@ print(counties)
 
 for county in counties:
     print(county)
+
+print('====================')
+if "Kajiado" in counties:
+    print("Kajiado County")
+else:
+    print("Not found")
+
+
+print('====================')
+# The for loop can also be used to iterate through a dictionary
+
+
+player = {
+    "name": "Mbappe",
+    "age": 25,
+    "teams": ["PSG", "Monaco", "France"],
+    "nationality": "French"
+}
+
+for key in player:
+    print(key)
+
+print('====================')
+for values in player:
+    print(player[values])
+# print(player["name"])
+
+
+
+print('====================')
+# loop through the teams the player has played for
+for team in player["teams"]:
+    print(team)
+
